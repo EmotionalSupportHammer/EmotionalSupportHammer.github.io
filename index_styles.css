@@ -19,7 +19,7 @@ h1, h2{
   border-radius: 46%;
 }
 
-.cat-ears div{
+.cat-ears, .cat-left-ear, .Right-ear{
     z-index: 1;
     border-top-left-radius: 90px;
     border-top-right-radius: 10px;
@@ -29,7 +29,7 @@ h1, h2{
 }
 .cat-left-ear {
     position: absolute;
-    top: -26px;
+    top: -30px;
     left: -31px;
     transform: rotate(-45deg);
 
@@ -42,4 +42,33 @@ h1, h2{
 
 }
 
-.inner-right{}
+.inner-right{
+    position: absolute;
+    top: 21px;
+    right: -12px;
+    width: 20px;
+    height: 25px;
+    border-radius: 59%;
+    background: linear-gradient(#a844a0 100%, #633232 20%);
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #f30000;    
+    border: 1px solid #b33aa8;
+    z-index: 2;
+}
+
+.inner-left{
+    position: absolute;
+    top: 21px;
+    right: -12px;
+    width: 20px;
+    height: 25px;
+    border-radius: 59%;
+    background: linear-gradient(#a844a0 100%, #633232 20%);
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #f30000;    
+    border: 1px solid #b33aa8;
+    z-index: 2;
+}
+
