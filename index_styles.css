@@ -47,7 +47,7 @@ h1, h2{
     top: 21px;
     right: -12px;
     width: 20px;
-    height: 25px;
+    height: 40px;
     border-radius: 59%;
     background: linear-gradient(#a844a0 100%, #633232 20%);
     border-left: 35px solid transparent;
@@ -62,7 +62,7 @@ h1, h2{
     top: 21px;
     right: -12px;
     width: 20px;
-    height: 25px;
+    height: 40px;
     border-radius: 59%;
     background: linear-gradient(#a844a0 100%, #633232 20%);
     border-left: 35px solid transparent;
@@ -72,3 +72,30 @@ h1, h2{
     z-index: 2;
 }
 
+.eyes > div{
+    position: absolute;
+    border-radius: 60%;
+    width: 45px;
+    height: 35px;
+    background: radial-gradient( #000000 60%, #000000 40%, #18c42c 30%, #02ff1f 100%);
+    
+}
+
+.Right-eye{
+    right: 25px;
+    top: 40px;
+    
+    
+}
+.Left-eye{
+    left: 25px;
+    top: 40px;
+    
+}
+
+
+
+.P-L{
+    left: 8px;
+    top: 7px;     
+}
