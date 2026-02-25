@@ -1,9 +1,14 @@
+:root{
+    --cat-eye-color: radial-gradient( #000000 10%, #000000 20%, #18c42c 30%, #02ff1f 100%);
+}
 *{
     color: #000;
 }
 h1, h2{
     text-align: center;
 }
+
+    
 
 .cat-head {
   position: absolute;
@@ -17,7 +22,15 @@ h1, h2{
   height: 180px;
   border: 1px solid #000;
   border-radius: 46%;
+  transition: transform 3s ease-in 0ms;
+  
 }
+.cat-head:active{
+    transform: scale(2);
+    
+    
+}
+
 
 .cat-ears, .cat-left-ear, .Right-ear{
     z-index: 1;
@@ -26,17 +39,18 @@ h1, h2{
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
     border-bottom: 70px solid #643737;
+    top: -26px;
 }
 .cat-left-ear {
     position: absolute;
-    top: -30px;
+   
     left: -31px;
     transform: rotate(-45deg);
 
 }
 .Right-ear {
   position: absolute;
-  top: -26px;
+ 
   right: -31px;
     transform: rotate(45deg);
 
@@ -77,9 +91,21 @@ h1, h2{
     border-radius: 60%;
     width: 45px;
     height: 35px;
-    background: radial-gradient( #000000 60%, #000000 40%, #18c42c 30%, #02ff1f 100%);
+    border-width: 200px;
+    
+    
+    
+    animation-play-state: st;
+    background: var(--cat-eye-color);
+    
     
 }
+.cat-head:active .eyes>div {
+    background: radial-gradient( #000000 10%, #000000 20%, #c41818 30%, #ff0202 100%);
+    
+    
+}
+
 
 .Right-eye{
     right: 25px;
@@ -104,15 +130,16 @@ h1, h2{
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-bottom: 20px solid #ffaaf8;
-  background: radial-gradient( #000000 60%, #000000 40%, #18c42c 30%, #02ff1f 100%);
 }
 
 .mouth>div{
+    z-index: 2;
     position: absolute;
     border: 2px solid #000;
     width: 50px;
     height: 50px;
     top: 35px;
+    border-width: 20%;
     border-radius: 190%/190px 150px 0 0; 
     rotate: 180deg;
     border-color: rgb(20, 20, 20) transparent transparent transparent;
@@ -127,11 +154,23 @@ h1, h2{
 
 }
 
-.left-tooth{
+.tooth{
+    position: absolute;
     size: 10px;
+    
+    top: 165%;
     
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
     border-bottom: 70px solid #ffffff;
     rotate: 180deg;
+}
+.tooth.Left{
+    left: -200%;
+    transform: scale(0.2) rotate(10deg);
+}
+
+.tooth.Right{
+    right: 50%;
+    transform: scale(0.2) rotate(-25deg);
 }
