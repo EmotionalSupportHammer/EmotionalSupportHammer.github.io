@@ -6,6 +6,8 @@
 }
 h1, h2{
     text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
     
@@ -14,8 +16,8 @@ h1, h2{
   position: absolute;
   right: 0;
   left: 0;
-  top: 0;
-  bottom: 0;
+  top: -8rem;
+  bottom: 2rem;
   margin: auto;
   background: linear-gradient(#643737 85%, #633232 20%);
   width: 205px;
@@ -102,8 +104,6 @@ h1, h2{
 }
 .cat-head:active .eyes>div {
     background: radial-gradient( #000000 10%, #000000 20%, #c41818 30%, #ff0202 100%);
-    
-    
 }
 
 
@@ -158,7 +158,7 @@ h1, h2{
     position: absolute;
     size: 10px;
     
-    top: 165%;
+    top: 157%;
     
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
@@ -171,6 +171,6 @@ h1, h2{
 }
 
 .tooth.Right{
-    right: 50%;
-    transform: scale(0.2) rotate(-25deg);
+    right: 55%;
+    transform: scale(0.2) rotate(-10deg);
 }
