@@ -174,3 +174,29 @@ h1, h2{
     right: 55%;
     transform: scale(0.2) rotate(-10deg);
 }
+
+
+
+/* nav bar */
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(3, 59, 3);
+    padding: 0px;
+    margin: 0px;
+    color: rgb(2, 255, 23);
+    overflow: hidden;
+}
+.navbar a{
+    padding: 0.5rem;
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+}
+.navbar a:hover{
+    background-color: blue;
+}
+
+.navbar li{
+    float: left;
+    
+}
