@@ -29,6 +29,8 @@ h1, h2{
   border: .2rem solid #000;
   border-radius: 46%;
   transition: transform 3s ease-in 0ms;
+  align-items: center;
+  z-index: 1;
   
 }
 .cat-head:active{
@@ -40,7 +42,7 @@ h1, h2{
 
 .cat-left-ear, .Right-ear{
     
-    z-index: 1;
+    z-index: 2;
     border-top-left-radius: 90px;
     border-top-right-radius: 10px;
     border-left: 35px solid transparent;
@@ -97,13 +99,8 @@ h1, h2{
 .eyes > div{
     position: absolute;
     border-radius: 60%;
-    width: 45px;
-    height: 35px;
-    border-width: 200px;
-    
-    
-    
-    animation-play-state: st;
+    width: 2.8rem;
+    height: 2.2rem;
     background: var(--cat-eye-color);
     
     
@@ -114,14 +111,14 @@ h1, h2{
 
 
 .Right-eye{
-    right: 25px;
-    top: 40px;
+    right: 1.5rem;
+    top: 2.4rem;
     
     
 }
 .Left-eye{
-    left: 25px;
-    top: 40px;
+    right: 7.5rem;
+    top: 2.4rem;
     
 }
 
@@ -180,7 +177,65 @@ h1, h2{
     right: 55%;
     transform: scale(0.2) rotate(-10deg);
 }
+/*Cat body <everything but the head*/
+.cat-body{
+    position: absolute;
+    align-items: center;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    right: 0;
+    left: 0;
+    top: 10rem;
+    bottom: 2rem;
+    margin: auto;
+    background: repeating-linear-gradient(black, #643737 1%, #643737 5%);
+    width: 14rem;
+    height: 12rem;
+    border: .2rem solid #000;
+    z-index: 0;
+    margin: auto;
 
+}
 
+.tail{
+    z-index: -1;
+    position: absolute;
+    transform: rotate(-80deg);
+    top: 3rem;
+    border-top: 4rem;
+    border-bottom: 4rem;
+    border-radius: 30%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 15rem;
+    height: 3rem;
+    right: -9.5rem;
+    background: repeating-linear-gradient(90deg,black, #643737 3%, #643737 5%);
+    border: 0.2rem solid #000;
+    border-color: transparent rgb(20, 20, 20) rgb(20, 20, 20) transparent;
+    
+    
 
+}
 
+@media only screen and (max-width: 712px){
+
+    .cat-head{
+        position: relative;
+        transform: scale(.5);
+        top: 100%;
+        
+    }
+
+    .cat-body{
+        position: relative;
+        transform: scale(.5);
+        top: -10rem;
+    }
+    .cat-body> .tail{
+        position: relative;
+        transform: scale(.5) rotate(-80deg);
+        top: 6.5rem;
+        right: -7rem;
+    }
+}

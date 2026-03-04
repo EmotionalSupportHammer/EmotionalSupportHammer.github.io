@@ -6,6 +6,7 @@
     margin: 0px;
     color: rgb(2, 255, 23);
     overflow: hidden;
+    
 }
 .navbar a{
     padding: 0.5rem;
@@ -23,15 +24,15 @@
 
 
 @media only screen and (max-width: 824px){
-
-    .cat-head{
-        position: relative;
-        transform: scale(.5);
-        top: 100%;
-        
-    }
     h1, h2{
         font-size: 80%;
+    }
+
+    .navbar{
+        list-style-position: inside;
+        font-size: 50%;
+        width: 100%;
+        
     }
 
     
