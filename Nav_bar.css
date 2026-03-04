@@ -20,3 +20,19 @@
 .navbar li{
     float: left;
 }
+
+
+@media only screen and (max-width: 824px){
+
+    .cat-head{
+        position: relative;
+        transform: scale(.5);
+        top: 100%;
+        
+    }
+    h1, h2{
+        font-size: 80%;
+    }
+
+    
+}
