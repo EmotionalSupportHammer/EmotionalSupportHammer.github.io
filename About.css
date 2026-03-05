@@ -19,6 +19,23 @@
     text-align: center;
     font-size: 200%;
 }
-.certificaions{
+.certfications{
+    display: grid;
+    grid-column: 2;
+    object-fit: cover;
+    grid-template-columns: repeat(5, 1fr);
+
     
+}
+@media only screen and (max-width: 712px){
+    .TopOfPage, .Section_starter{
+        font-size: 1rem;
+
+    }
+    h4{
+        font-size: 0.5rem;
+    }
+    .certfications{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
