@@ -18,3 +18,11 @@ h1, h2{
 
 
 
+.model_lineup{
+    display: grid;
+    grid-column: 2;
+    object-fit: cover;
+    grid-template-columns: repeat(5, 1fr);
+    
+    
+}
