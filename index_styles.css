@@ -28,16 +28,12 @@ h1, h2{
   height: 180px;
   border: .2rem solid #000;
   border-radius: 46%;
-  transition: transform 3s ease-in 0ms;
+  
   align-items: center;
   z-index: 1;
   
 }
-.cat-head:active{
-    transform: scale(2);
-    
-    
-}
+
 
 
 .cat-left-ear, .Right-ear{
@@ -105,9 +101,7 @@ h1, h2{
     
     
 }
-.cat-head:active .eyes>div {
-    background: radial-gradient( #000000 10%, #000000 20%, #c41818 30%, #ff0202 100%);
-}
+
 
 
 
@@ -124,18 +118,23 @@ h1, h2{
     
 }
 
-.nose {
-  position: absolute;
-  top: 55px;
-  left: -50px;
-  border-top-left-radius: 0%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  transform: rotate(180deg);
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 20px solid #ffaaf8;
+#nose {
+    position: absolute;
+    z-index: 3;
+    background-image: "images\cat_nose.png";
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: -2.8rem;
+    top: 2rem;
+    height: 5rem;
+    border: none;
+    
+    
 }
+#nose:hover{
+    cursor: pointer;
+}
+
 
 .mouth>div{
     z-index: 2;
