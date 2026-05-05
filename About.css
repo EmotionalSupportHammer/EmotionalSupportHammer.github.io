@@ -2,22 +2,37 @@
     color: red;
 }
 
+.big_text{
+    font-size: 2rem;
+}
 
 .TopOfPage{
-    color: red;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-    background-color: #633232;
+    background-color: #000000;
 }
-
+#Social >ul > li{
+    color:yellow;
+    text-align: center;
+    background-color: purple ;
+    font-size: 2rem;
+}
+a:hover{
+    cursor:pointer;
+    color: rgb(119, 119, 29);
+}
 #Pinfo{
     color: black;
 }
 
 .Section_starter{
     text-align: center;
-    font-size: 200%;
+    font-size: 2rem;
+    background-color: #000000;
+    color: #fff;
+
 }
 .certfications{
     display: grid;
@@ -27,8 +42,15 @@
 
     
 }
+
+#hell{
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/fire_BG.png);
+}
 @media only screen and (max-width: 712px){
-    .TopOfPage, .Section_starter{
+    .big_text{
         font-size: 1rem;
 
     }

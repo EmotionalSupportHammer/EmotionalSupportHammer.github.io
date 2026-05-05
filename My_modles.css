@@ -1,13 +1,27 @@
 .models{
-    color: red;
+    
     background-repeat: repeat round;
     /*Background credit gose to onion_fleur on twiter (I am not calling it X)*/
     background-image: url("images/background_for_models.jpg");
     
     
 }
-
-
+.Intro{
+    color: white;
+    background-color: black;
+}
+#Deathgaurd{
+    color: #78d8f0;
+    background-color: #0d4101;
+}
+#gloomspite{
+    color:goldenrod;
+    background-color: #000;
+}
+#misc{
+    color: #fff;
+    background-color: #000;
+}
 *{
     color: #000;
 }
