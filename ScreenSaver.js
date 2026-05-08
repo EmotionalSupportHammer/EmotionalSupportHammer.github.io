@@ -14,9 +14,10 @@ function init() {
     // animate the logo
     requestAnimationFrame(animate);
 }
+navigation.
+document.getElementById("ball").addEventListener("loadedmetadata", bonk.play());
 
 // Change the color of the DVD logo
-
 
 function handle_collision() {
     let dvd_height = dvd.offsetHeight;
@@ -43,16 +44,16 @@ function handle_collision() {
         // reverse y_incr
         if(y_incr <= 25 && y_incr >0){
           y_incr++
-          console.log(x_incr);
-          console.log(y_incr);
+
         }
         y_incr = -y_incr;
+        bonk.play();
     }
 
 }
 
 function animate() {
-    bonk.play();
+    
     handle_collision();
     dvd.style.top = `${dvd.offsetTop + y_incr}px`;
     dvd.style.left = `${dvd.offsetLeft + x_incr}px`;
