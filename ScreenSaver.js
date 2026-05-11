@@ -1,4 +1,5 @@
 const dvd = document.getElementById('ball');
+const score= document.getElementById('score')
 let x_incr = 5;
 let y_incr = 5;
 
@@ -9,16 +10,35 @@ function init() {
     dvd.style.position = 'absolute';
     dvd.style.top = `${x_incr}px`;
     dvd.style.left = `${y_incr}px`;
+    for(var i = 0; i < 50; i++){
+        dvd.click();
+        console.log("c"+ i)}
+
     
 
     // animate the logo
     requestAnimationFrame(animate);
 }
-navigation.
-document.getElementById("ball").addEventListener("loadedmetadata", bonk.play());
 
 // Change the color of the DVD logo
 
+
+let you_hit_ball = 0;
+
+dvd.addEventListener("mouseover" || "click",() =>{ 
+    bonk.play();
+    x_incr = 5;
+    y_incr= 5;
+    x_incr = -x_incr;
+    if(Math.floor(Math.random()*4)%2 === 0){
+        y_incr = -y_incr;
+    }else{y_incr += 10}
+    bonk.play();
+    you_hit_ball += 1;
+    score.innerText = `You hit the ball ${you_hit_ball} times`;
+    
+
+});
 function handle_collision() {
     let dvd_height = dvd.offsetHeight;
     let dvd_width = dvd.offsetWidth;
@@ -35,7 +55,7 @@ function handle_collision() {
         // reverse x_incr
         
         if(x_incr <= 25 && x_incr >0){
-          x_incr++
+          x_incr++;
         }
         x_incr = -x_incr;
     }
@@ -43,7 +63,7 @@ function handle_collision() {
     if (dvd_top <= 0 || dvd_top + dvd_height >= win_height) {
         // reverse y_incr
         if(y_incr <= 25 && y_incr >0){
-          y_incr++
+          y_incr++;
 
         }
         y_incr = -y_incr;
