@@ -1,5 +1,6 @@
 const dvd = document.getElementById('ball');
-const score= document.getElementById('score')
+const score= document.getElementById('score');
+const sad = document.getElementById('pop');
 let x_incr = 5;
 let y_incr = 5;
 
@@ -29,15 +30,26 @@ dvd.addEventListener("mouseover" || "click",() =>{
     bonk.play();
     x_incr = 5;
     y_incr= 5;
-    x_incr = -x_incr;
-    if(Math.floor(Math.random()*4)%2 === 0){
-        y_incr = -y_incr;
-    }else{y_incr += 10}
-    bonk.play();
     you_hit_ball += 1;
-    score.innerText = `You hit the ball ${you_hit_ball} times`;
-    
+    x_incr = -x_incr;
 
+
+
+
+    
+    if (you_hit_ball >= 1000){
+        sad.play();
+        score.innerText = `Ah shit it poped ps: What are you doing go do litterly anthing else better with your time`;
+        bonk.muted = true;
+        dvd.remove();
+        
+    }else{
+        if(Math.floor(Math.random()*4)%2 === 0){
+        y_incr = -y_incr;
+    }   else{y_incr += 10}
+        bonk.play();
+        score.innerText = `You hit the ball ${you_hit_ball} times`;
+    }
 });
 function handle_collision() {
     let dvd_height = dvd.offsetHeight;
